@@ -3,21 +3,28 @@
 # 🚀 gh-pulse
 
 **GitHub Productivity CLI** — Analyze repositories, generate badges, and automate README updates
-
+![Stars](https://img.shields.io/github/stars/ruslanlap/gh-pulse?style=flat-square)
+![Forks](https://img.shields.io/github/forks/ruslanlap/gh-pulse?style=flat-square)
+![Issues](https://img.shields.io/github/issues/ruslanlap/gh-pulse?style=flat-square)
+![Top Language](https://img.shields.io/github/languages/top/ruslanlap/gh-pulse?style=flat-square)
+![Release](https://img.shields.io/github/v/release/ruslanlap/gh-pulse?style=flat-square)
+![Downloads](https://img.shields.io/github/downloads/ruslanlap/gh-pulse/total?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/ruslanlap/gh-pulse?style=flat-square)
+![License](https://img.shields.io/github/license/ruslanlap/gh-pulse?style=flat-square)
 [![PyPI version](https://img.shields.io/pypi/v/gh-pulse?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/gh-pulse/)
 [![Python Version](https://img.shields.io/pypi/pyversions/gh-pulse?logo=python&logoColor=white)](https://pypi.org/project/gh-pulse/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Downloads](https://img.shields.io/pypi/dm/gh-pulse?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/gh-pulse/)
 
-[![CI](https://github.com/ruslanlap/gitpulse/workflows/CI/badge.svg)](https://github.com/ruslanlap/gitpulse/actions)
-[![codecov](https://codecov.io/gh/ruslanlap/gitpulse/branch/main/graph/badge.svg)](https://codecov.io/gh/ruslanlap/gitpulse)
+[![CI](https://github.com/ruslanlap/gh-pulse/workflows/CI/badge.svg)](https://github.com/ruslanlap/gh-pulse/actions)
+[![codecov](https://codecov.io/gh/ruslanlap/gh-pulse/branch/main/graph/badge.svg)](https://codecov.io/gh/ruslanlap/gh-pulse)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
 [![Checked with mypy](https://img.shields.io/badge/mypy-checked-blue)](http://mypy-lang.org/)
 
-[![GitHub Stars](https://img.shields.io/github/stars/ruslanlap/gitpulse?style=social)](https://github.com/ruslanlap/gitpulse/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/ruslanlap/gitpulse?style=social)](https://github.com/ruslanlap/gitpulse/network/members)
-[![GitHub Issues](https://img.shields.io/github/issues/ruslanlap/gitpulse)](https://github.com/ruslanlap/gitpulse/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ruslanlap/gitpulse/pulls)
+[![GitHub Stars](https://img.shields.io/github/stars/ruslanlap/gh-pulse?style=social)](https://github.com/ruslanlap/gh-pulse/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/ruslanlap/gh-pulse?style=social)](https://github.com/ruslanlap/gh-pulse/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/ruslanlap/gh-pulse)](https://github.com/ruslanlap/gh-pulse/issues)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ruslanlap/gh-pulse/pulls)
 
 **A powerful local analytics hub for your GitHub profile and repositories.**
 
@@ -39,6 +46,36 @@ Pull data from GitHub API, cache it locally, display stats in terminal, and gene
 - 🎨 **Beautiful Terminal Output** — rich tables and panels with colors
 - 🔒 **Secure Token Storage** — encrypted credential management with keyring
 - ⚡ **High Performance** — async HTTP client with connection pooling
+
+## 🖼️ Demo
+
+Get a feel for gh-pulse with a few screenshots:
+
+<div align="center">
+
+![Demo 1 — Repository statistics](assets/demo1.png)
+![Demo 2 — User profile analytics](assets/demo2.png)
+![Demo 3 — Badge generation](assets/demo3.png)
+![Demo 4 — JSON export](assets/demo4.png)
+![Demo 5 — Cache management](assets/demo5.png)
+
+</div>
+
+## 🧭 References Demo
+
+Use reference-style Markdown for cleaner links and images:
+
+```markdown
+This repo: [gh-pulse][repo]
+
+Preview images:
+![Repo Stats][img-demo1]
+![User Analytics][img-demo2]
+```
+
+[repo]: https://github.com/ruslanlap/gh-pulse
+[img-demo1]: assets/demo1.png
+[img-demo2]: assets/demo2.png
 
 ## 📦 Installation
 
@@ -66,8 +103,8 @@ uvx gh-pulse --help
 ### Install from source
 
 ```bash
-git clone https://github.com/ruslanlap/gitpulse.git
-cd gitpulse
+git clone https://github.com/ruslanlap/gh-pulse.git
+cd gh-pulse
 pip install -e .
 ```
 
@@ -88,7 +125,7 @@ Save your token securely:
 gh-pulse auth ghp_YOUR_TOKEN_HERE
 ```
 
-Token will be stored in `~/.gitpulse/config` with restricted permissions (600).
+Token will be stored in `~/.gh-pulse/config` with restricted permissions (600).
 
 **Alternative:** Use environment variable
 
@@ -99,13 +136,13 @@ export GITHUB_TOKEN=ghp_YOUR_TOKEN_HERE
 ### 2. Analyze a Repository
 
 ```bash
-gh-pulse repo ruslanlap/gitpulse
+gh-pulse repo ruslanlap/gh-pulse
 ```
 
 ### 3. Generate Badges
 
 ```bash
-gh-pulse badges ruslanlap/gitpulse
+gh-pulse badges ruslanlap/gh-pulse
 ```
 
 ### 4. View User Profile
@@ -246,8 +283,8 @@ gh-pulse export --repo owner/repo --user username -o full.json
 ```json
 {
   "repository": {
-    "name": "gitpulse",
-    "full_name": "ruslanlap/gitpulse",
+    "name": "gh-pulse",
+    "full_name": "ruslanlap/gh-pulse",
     "stats": {
       "stars": 123,
       "forks": 45,
@@ -276,14 +313,14 @@ Clear all cached data:
 gh-pulse clear-cache
 ```
 
-Cache is stored in `~/.gitpulse/cache/` with 1-hour TTL.
+Cache is stored in `~/.gh-pulse/cache/` with 1-hour TTL.
 
 ## 🔧 Configuration
 
 ### File Structure
 
 ```
-~/.gitpulse/
+~/.gh-pulse/
 ├── config          # GitHub token (secure storage)
 └── cache/          # Cached API responses
     ├── repo_owner_name.json
@@ -292,7 +329,7 @@ Cache is stored in `~/.gitpulse/cache/` with 1-hour TTL.
 
 ### Environment Variables
 
-- `GITHUB_TOKEN` — GitHub API token (alternative to `gitpulse auth`)
+- `GITHUB_TOKEN` — GitHub API token (alternative to `gh-pulse auth`)
 
 ## 🎯 CI/CD Integration
 
@@ -357,8 +394,8 @@ jobs:
 
 ```bash
 # Clone the repository
-git clone https://github.com/ruslanlap/gitpulse.git
-cd gitpulse
+git clone https://github.com/ruslanlap/gh-pulse.git
+cd gh-pulse
 
 # Install with development dependencies (using uv)
 uv pip install -e ".[dev]"
@@ -374,7 +411,7 @@ pip install -e ".[dev]"
 pytest
 
 # With coverage
-pytest --cov=gitpulse --cov-report=html
+pytest --cov=gh-pulse --cov-report=html
 
 # Using uv
 uv run pytest
@@ -396,8 +433,9 @@ ruff format src/
 ### Project Structure
 
 ```
-gitpulse/
-├── src/gitpulse/
+gh-pulse/
+├── assets/             # Project assets (logos, images, etc.)
+├── src/gh-pulse/
 │   ├── __init__.py       # Package version
 │   ├── cli.py            # Typer CLI application
 │   ├── github_api.py     # GitHub REST API client
@@ -417,7 +455,7 @@ gitpulse/
 ### GitHubClient
 
 ```python
-from gitpulse.github_api import GitHubClient
+from gh-pulse.github_api import GitHubClient
 
 # Initialize client
 with GitHubClient(token="ghp_xxx") as client:
@@ -433,7 +471,7 @@ with GitHubClient(token="ghp_xxx") as client:
 ### BadgeGenerator
 
 ```python
-from gitpulse.badges import BadgeGenerator
+from gh-pulse.badges import BadgeGenerator
 
 gen = BadgeGenerator()
 
@@ -486,8 +524,8 @@ Built with awesome open-source tools:
 
 ## 🔗 Links
 
-- **Documentation**: [GitHub Wiki](https://github.com/ruslanlap/gitpulse/wiki)
-- **Issue Tracker**: [GitHub Issues](https://github.com/ruslanlap/gitpulse/issues)
+- **Documentation**: [GitHub Wiki](https://github.com/ruslanlap/gh-pulse/wiki)
+- **Issue Tracker**: [GitHub Issues](https://github.com/ruslanlap/gh-pulse/issues)
 - **PyPI Package**: [pypi.org/project/gh-pulse](https://pypi.org/project/gh-pulse/)
 - **Changelog**: [CHANGELOG.md](CHANGELOG.md)
 
