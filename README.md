@@ -11,15 +11,8 @@
 ![Downloads](https://img.shields.io/github/downloads/ruslanlap/gh-pulse/total?style=flat-square)
 ![Last Commit](https://img.shields.io/github/last-commit/ruslanlap/gh-pulse?style=flat-square)
 ![License](https://img.shields.io/github/license/ruslanlap/gh-pulse?style=flat-square)
-[![PyPI version](https://img.shields.io/pypi/v/gh-pulse?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/gh-pulse/)
-[![Python Version](https://img.shields.io/pypi/pyversions/gh-pulse?logo=python&logoColor=white)](https://pypi.org/project/gh-pulse/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://img.shields.io/pypi/dm/gh-pulse?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/gh-pulse/)
 
-[![CI](https://github.com/ruslanlap/gh-pulse/workflows/CI/badge.svg)](https://github.com/ruslanlap/gh-pulse/actions)
-[![codecov](https://codecov.io/gh/ruslanlap/gh-pulse/branch/main/graph/badge.svg)](https://codecov.io/gh/ruslanlap/gh-pulse)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
-[![Checked with mypy](https://img.shields.io/badge/mypy-checked-blue)](http://mypy-lang.org/)
 
 [![GitHub Stars](https://img.shields.io/github/stars/ruslanlap/gh-pulse?style=social)](https://github.com/ruslanlap/gh-pulse/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/ruslanlap/gh-pulse?style=social)](https://github.com/ruslanlap/gh-pulse/network/members)
@@ -61,21 +54,6 @@ Get a feel for gh-pulse with a few screenshots:
 
 </div>
 
-## 🧭 References Demo
-
-Use reference-style Markdown for cleaner links and images:
-
-```markdown
-This repo: [gh-pulse][repo]
-
-Preview images:
-![Repo Stats][img-demo1]
-![User Analytics][img-demo2]
-```
-
-[repo]: https://github.com/ruslanlap/gh-pulse
-[img-demo1]: assets/demo1.png
-[img-demo2]: assets/demo2.png
 
 ## 📦 Installation
 
