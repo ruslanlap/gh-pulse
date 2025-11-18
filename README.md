@@ -2,28 +2,24 @@
 
 # 🚀 gh-pulse
 
-**GitHub Productivity CLI** — Analyze repositories, generate badges, and automate README updates
-![Stars](https://img.shields.io/github/stars/ruslanlap/gh-pulse?style=flat-square)
-![Forks](https://img.shields.io/github/forks/ruslanlap/gh-pulse?style=flat-square)
-![Issues](https://img.shields.io/github/issues/ruslanlap/gh-pulse?style=flat-square)
-![Top Language](https://img.shields.io/github/languages/top/ruslanlap/gh-pulse?style=flat-square)
-![Release](https://img.shields.io/github/v/release/ruslanlap/gh-pulse?style=flat-square)
-![Downloads](https://img.shields.io/github/downloads/ruslanlap/gh-pulse/total?style=flat-square)
-![Last Commit](https://img.shields.io/github/last-commit/ruslanlap/gh-pulse?style=flat-square)
-![License](https://img.shields.io/github/license/ruslanlap/gh-pulse?style=flat-square)
+### GitHub Productivity CLI — Analyze repositories, generate badges, and automate README updates
 
-[![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
+[![Stars](https://img.shields.io/github/stars/ruslanlap/gh-pulse?style=flat-square&logo=github)](https://github.com/ruslanlap/gh-pulse/stargazers)
+[![Forks](https://img.shields.io/github/forks/ruslanlap/gh-pulse?style=flat-square&logo=github)](https://github.com/ruslanlap/gh-pulse/network/members)
+[![Issues](https://img.shields.io/github/issues/ruslanlap/gh-pulse?style=flat-square&logo=github)](https://github.com/ruslanlap/gh-pulse/issues)
+[![Top Language](https://img.shields.io/github/languages/top/ruslanlap/gh-pulse?style=flat-square&logo=python&logoColor=white)](https://github.com/ruslanlap/gh-pulse)
+[![Release](https://img.shields.io/github/v/release/ruslanlap/gh-pulse?style=flat-square&logo=github)](https://github.com/ruslanlap/gh-pulse/releases)
+[![Last Commit](https://img.shields.io/github/last-commit/ruslanlap/gh-pulse?style=flat-square&logo=github)](https://github.com/ruslanlap/gh-pulse/commits)
+[![License](https://img.shields.io/github/license/ruslanlap/gh-pulse?style=flat-square)](LICENSE)
+[![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg?style=flat-square)](https://github.com/astral-sh/ruff)
 
-[![GitHub Stars](https://img.shields.io/github/stars/ruslanlap/gh-pulse?style=social)](https://github.com/ruslanlap/gh-pulse/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/ruslanlap/gh-pulse?style=social)](https://github.com/ruslanlap/gh-pulse/network/members)
-[![GitHub Issues](https://img.shields.io/github/issues/ruslanlap/gh-pulse)](https://github.com/ruslanlap/gh-pulse/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ruslanlap/gh-pulse/pulls)
+---
 
-**A powerful local analytics hub for your GitHub profile and repositories.**
+### 🎯 A powerful local analytics hub for your GitHub profile and repositories
 
 Pull data from GitHub API, cache it locally, display stats in terminal, and generate ready-to-use fragments for README and CI/CD workflows.
 
-[Installation](#-installation) • [Quick Start](#-quick-start) • [Documentation](#-usage) • [Contributing](#-contributing)
+**[📦 Installation](#-installation)** • **[🚀 Quick Start](#-quick-start)** • **[📖 Documentation](#-usage)** • **[🤝 Contributing](#-contributing)**
 
 </div>
 
