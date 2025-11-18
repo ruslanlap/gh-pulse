@@ -1,13 +1,13 @@
 <div align="center">
 
-# 🚀 GitPulse
+# 🚀 gh-pulse
 
 **GitHub Productivity CLI** — Analyze repositories, generate badges, and automate README updates
 
-[![PyPI version](https://img.shields.io/pypi/v/gitpulse?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/gitpulse/)
-[![Python Version](https://img.shields.io/pypi/pyversions/gitpulse?logo=python&logoColor=white)](https://pypi.org/project/gitpulse/)
+[![PyPI version](https://img.shields.io/pypi/v/gh-pulse?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/gh-pulse/)
+[![Python Version](https://img.shields.io/pypi/pyversions/gh-pulse?logo=python&logoColor=white)](https://pypi.org/project/gh-pulse/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://img.shields.io/pypi/dm/gitpulse?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/gitpulse/)
+[![Downloads](https://img.shields.io/pypi/dm/gh-pulse?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/gh-pulse/)
 
 [![CI](https://github.com/ruslanlap/gitpulse/workflows/CI/badge.svg)](https://github.com/ruslanlap/gitpulse/actions)
 [![codecov](https://codecov.io/gh/ruslanlap/gitpulse/branch/main/graph/badge.svg)](https://codecov.io/gh/ruslanlap/gitpulse)
@@ -45,7 +45,7 @@ Pull data from GitHub API, cache it locally, display stats in terminal, and gene
 ### Install with pip
 
 ```bash
-pip install gitpulse
+pip install gh-pulse
 ```
 
 ### Install with uv (Recommended)
@@ -56,11 +56,11 @@ pip install gitpulse
 # Install uv if you haven't already
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# Install gitpulse
-uv pip install gitpulse
+# Install gh-pulse
+uv pip install gh-pulse
 
 # Or run without installation
-uvx gitpulse --help
+uvx gh-pulse --help
 ```
 
 ### Install from source
@@ -85,7 +85,7 @@ Create a GitHub Personal Access Token:
 Save your token securely:
 
 ```bash
-gitpulse auth ghp_YOUR_TOKEN_HERE
+gh-pulse auth ghp_YOUR_TOKEN_HERE
 ```
 
 Token will be stored in `~/.gitpulse/config` with restricted permissions (600).
@@ -99,19 +99,19 @@ export GITHUB_TOKEN=ghp_YOUR_TOKEN_HERE
 ### 2. Analyze a Repository
 
 ```bash
-gitpulse repo ruslanlap/gitpulse
+gh-pulse repo ruslanlap/gitpulse
 ```
 
 ### 3. Generate Badges
 
 ```bash
-gitpulse badges ruslanlap/gitpulse
+gh-pulse badges ruslanlap/gitpulse
 ```
 
 ### 4. View User Profile
 
 ```bash
-gitpulse user ruslanlap --top 5
+gh-pulse user ruslanlap --top 5
 ```
 
 ## 📖 Usage
@@ -121,7 +121,7 @@ gitpulse user ruslanlap --top 5
 Get comprehensive statistics for any GitHub repository:
 
 ```bash
-gitpulse repo owner/repository
+gh-pulse repo owner/repository
 ```
 
 **Example output:**
@@ -153,8 +153,8 @@ gitpulse repo owner/repository
 Analyze GitHub user profiles with top repositories:
 
 ```bash
-gitpulse user username
-gitpulse user username --top 5  # Show top 5 repositories
+gh-pulse user username
+gh-pulse user username --top 5  # Show top 5 repositories
 ```
 
 **Example output:**
@@ -194,7 +194,7 @@ Total stars from top 3 repos: ⭐ 1,668
 Generate beautiful Markdown badges for your README:
 
 ```bash
-gitpulse badges owner/repository
+gh-pulse badges owner/repository
 ```
 
 **Example output:**
@@ -218,7 +218,7 @@ Copy and paste the above Markdown into your README.md
 
 ```bash
 # Select specific badges only
-gitpulse badges owner/repo --custom stars,forks,license
+gh-pulse badges owner/repo --custom stars,forks,license
 ```
 
 Available types: `stars`, `forks`, `issues`, `license`, `release`, `language`, `downloads`, `commit`
@@ -229,16 +229,16 @@ Export data as JSON for automation and CI/CD workflows:
 
 ```bash
 # Export repository statistics
-gitpulse export --repo owner/repository
+gh-pulse export --repo owner/repository
 
 # Export user profile
-gitpulse export --user username
+gh-pulse export --user username
 
 # Save to file
-gitpulse export --repo owner/repo --output stats.json
+gh-pulse export --repo owner/repo --output stats.json
 
 # Export both
-gitpulse export --repo owner/repo --user username -o full.json
+gh-pulse export --repo owner/repo --user username -o full.json
 ```
 
 **JSON format:**
@@ -273,7 +273,7 @@ gitpulse export --repo owner/repo --user username -o full.json
 Clear all cached data:
 
 ```bash
-gitpulse clear-cache
+gh-pulse clear-cache
 ```
 
 Cache is stored in `~/.gitpulse/cache/` with 1-hour TTL.
@@ -319,7 +319,7 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
-                  uvx gitpulse badges ${{ github.repository }} > badges.md
+                  uvx gh-pulse badges ${{ github.repository }} > badges.md
 
             - name: Update README
               run: |
@@ -342,7 +342,7 @@ jobs:
   env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   run: |
-      uvx gitpulse export --repo ${{ github.repository }} -o metrics.json
+      uvx gh-pulse export --repo ${{ github.repository }} -o metrics.json
 
 - name: Upload metrics artifact
   uses: actions/upload-artifact@v4
@@ -488,7 +488,7 @@ Built with awesome open-source tools:
 
 - **Documentation**: [GitHub Wiki](https://github.com/ruslanlap/gitpulse/wiki)
 - **Issue Tracker**: [GitHub Issues](https://github.com/ruslanlap/gitpulse/issues)
-- **PyPI Package**: [pypi.org/project/gitpulse](https://pypi.org/project/gitpulse/)
+- **PyPI Package**: [pypi.org/project/gh-pulse](https://pypi.org/project/gh-pulse/)
 - **Changelog**: [CHANGELOG.md](CHANGELOG.md)
 
 ---
@@ -499,6 +499,6 @@ Built with awesome open-source tools:
 
 If you find this project useful, please consider giving it a ⭐️
 
-[⬆ Back to Top](#-gitpulse)
+[⬆ Back to Top](#-gh-pulse)
 
 </div>

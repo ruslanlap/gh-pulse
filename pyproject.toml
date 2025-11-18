@@ -1,5 +1,5 @@
 [project]
-name = "gitpulse"
+name = "gh-pulse"
 version = "0.1.0"
 description = "GitHub productivity CLI - analyze repos, generate badges, and automate README updates"
 authors = [
@@ -35,7 +35,8 @@ dev = [
 ]
 
 [project.scripts]
-gitpulse = "gitpulse.cli:app"
+gh-pulse = "gitpulse.cli:app"
+gitpulse = "gitpulse.cli:app"  # Keep legacy command for convenience
 
 [project.urls]
 Homepage = "https://github.com/ruslanlap/gitpulse"
